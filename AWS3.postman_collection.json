@@ -1,0 +1,63 @@
+{
+  "info": {
+    "_postman_id": "a691db0a-4885-488a-a439-b1eec1fe0ae2",
+    "name": "AWS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20150021",
+    "_collection_link": "https://go.postman.co/collection/20150021-a691db0a-4885-488a-a439-b1eec1fe0ae2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "S3upload",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "uuid": "c97f64a4-0d1b-482f-b456-c53552522c19",
+              "src": "/C:/Users/oconde/Videos/anexo34.pdf"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/s3/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "s3",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S3Download",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/s3/download/anexo34.pdf",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "s3",
+            "download",
+            "anexo34.pdf"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
